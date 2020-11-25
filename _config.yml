@@ -9,7 +9,7 @@ exclude:  ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 've
 
 permalink:  pretty
 paginate: 5
-paginate_path:  /blog/
+paginate_path:  /yeieje_pool/blog/
 
 blog:
   truncated_preview:  false
