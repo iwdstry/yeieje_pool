@@ -19,9 +19,9 @@ sass:
   style:
 
 author:
-  name: Nico Elayda
-  url:  nicoelayda.github.io
-  email:  nico@elayda.com
+  name: yeieje2
+  url:  https://iwdstry.github.io/yeieje_pool/
+  
 
 plugins:
   - jekyll-coffeescript
