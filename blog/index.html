@@ -7,7 +7,7 @@ title: Blog
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}/yeieje_pool/{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -16,7 +16,7 @@ title: Blog
 
     {% if post.truncated_preview == true or site.blog.truncated_preview and post.truncated_preview != false %}
       {{ post.excerpt }}
-      <a href="{{ site.baseurl }}/yeieje_pool/{{ post.url }}">Read more</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
     {% else %}
       {{ post.content }}
     {% endif %}
@@ -26,7 +26,7 @@ title: Blog
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}/yeieje_pool/">
+    <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
       <i class="fa fa-arrow-circle-o-left"></i> 
       <span class="pagination-text">older posts</span>
     </a>
@@ -40,7 +40,7 @@ title: Blog
   <!-- <a class="pagination-item" href="#">archive</a> -->
 
   {% if paginator.previous_page %}
-    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}/yeieje_pool/">
+    <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
       <span class="pagination-text">newer posts</span> 
       <i class="fa fa-arrow-circle-o-right"></i>
     </a>
