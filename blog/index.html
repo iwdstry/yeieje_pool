@@ -7,7 +7,7 @@ title: Blog
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ site.baseurl }}/yeieje_pool/{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -16,7 +16,7 @@ title: Blog
 
     {% if post.truncated_preview == true or site.blog.truncated_preview and post.truncated_preview != false %}
       {{ post.excerpt }}
-      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+      <a href="{{ site.baseurl }}/yeieje_pool/{{ post.url }}">Read more</a>
     {% else %}
       {{ post.content }}
     {% endif %}
